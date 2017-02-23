@@ -43,7 +43,7 @@ first_vehicle_y = vehicle_one.y
 vehicle_two_pos = raw_input().split()
 vehicle_two_commands = raw_input()
 
-vehicle_two = Vehicle(int(vehicle_two_pos[0]), int(vehicle_two_pos[1]), vehicle_two_ps[2])
+vehicle_two = Vehicle(int(vehicle_two_pos[0]), int(vehicle_two_pos[1]), vehicle_two_pos[2])
 for command in vehicle_two_commands:
     eval("vehicle_two.{0}()".format(commands[command]))
 
